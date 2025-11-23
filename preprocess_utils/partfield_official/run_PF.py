@@ -28,7 +28,7 @@ def _pkg_file(rel: str) -> Path:
 class PFInferenceModel:
     def __init__(self, 
                  cfg_path=None, 
-                 checkpoint_path="model_objaverse.ckpt", 
+                 checkpoint_path="pretrained/PartUV/model_objaverse.ckpt", 
                  device=None):
         parser = default_argument_parser()
         args = parser.parse_args([])
